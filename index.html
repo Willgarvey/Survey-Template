@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="scripts.js" defer></script>
+    <title>Personality Test</title>
+    <style>
+        .quiz-options {
+            display: grid;
+            grid-template-columns: 1fr 1fr; /* Two equal columns */
+            gap: 20px; /* Space between grid items */
+        }
+
+        .quiz-options .option {
+            display: flex;
+            align-items: center; /* Align radio buttons and labels vertically */
+        }
+
+        .quiz-options input {
+            margin-right: 10px; /* Space between radio button and label */
+        }
+    </style>
+</head>
+<body>
+    <main class="main-container" id="main-container">
+        <div class="progress-bar" id="progress-bar"></div>
+        <h2 id="current-question">Current Question</h2>
+        <div class="image-question" id="image-question"></div>
+        <div class="quiz-options" id="quiz-options">
+            <form>
+                <div class="option">
+                    <input type="radio" id="one" name="question" value="one">
+                    <label for="one">One</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="two" name="question" value="two">
+                    <label for="two">Two</label>
+                </div>
+                <div class="option">                
+                    <input type="radio" id="three" name="question" value="three">
+                    <label for="three">Three</label>
+                </div>
+                <div class="option">
+                    <input type="radio" id="four" name="question" value="four">
+                    <label for="four">Four</label>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
